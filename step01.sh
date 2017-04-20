@@ -73,6 +73,25 @@ apt-cache search php7.0
 apt-get -y install php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext php-apcu
 service php7.0-fpm reload
 
+# install Webmin
+cd /root
+wget http://prdownloads.sourceforge.net/webadmin/webmin_1.791_all.deb
+apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python
+#apt-get -f install
+# dpkg --install webmin_1.831_all.deb
+dpkg --install webmin_1.791_all.deb
+
+# install wordpress
+cd /usr/local/nginx/html
+wget https://wordpress.org/latest.tar.gz
+tar -xzf latest.tar.gz
+
+# install FFMPEG
+apt-get install software-properties-common
+add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
+apt-get update
+apt-get install ffmpeg
+
 # install Netdata
 curl -Ss 'https://raw.githubusercontent.com/firehol/netdata-demo-site/master/install-required-packages.sh' >/tmp/kickstart.sh && bash /tmp/kickstart.sh -i netdata-all
 
