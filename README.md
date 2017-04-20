@@ -6,6 +6,19 @@ I created this script to simplify the installation of the most common packages I
 
 I'm not a programming expert, it's just a hobby. Surely there are better ways to do this.
 
+This will install:
+ Ngnix web server with rtmp
+ Php7.0
+ Maria-DB
+ Webmin
+ PhpMyAdmin
+ Postfix
+ FFmpep
+ Netdata 
+ Wordpress
+ 
+ This is a basic installation! Using it as it is may not be safe! Customize it, change names to folders, and remove what's not up to!
+ 
 
 After installing php, edit the file /etc/nginx/nginx.conf :
 
