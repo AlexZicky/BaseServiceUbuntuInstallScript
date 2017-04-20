@@ -1,8 +1,7 @@
 # BaseServiceUbuntuInstallScript
-Auto install a base web server 
+#Auto install a base web server 
 
-
-I created this script to simplify the installation of the most common packages I use for a web server.
+#####I created this script to simplify the installation of the most common packages I use for a web server.
 
 I'm not a programming expert, it's just a hobby. Surely there are better ways to do this.
 
@@ -13,12 +12,13 @@ This will install:
  Webmin
  PhpMyAdmin
  Postfix
- FFmpep
+ FFmpeg
  Netdata 
  Wordpress
  
  This is a basic installation! Using it as it is may not be safe! Customize it, change names to folders, and remove what's not up to!
  
+ Use https://github.com/alexzicky/BaseServiceUbuntuInstallScript/archive/master.zip download in your work directory.
 
 After installing php, edit the file /etc/nginx/nginx.conf :
 
