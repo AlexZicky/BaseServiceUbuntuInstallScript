@@ -2,8 +2,9 @@
 Auto install a base web server 
 
 I created this script to simplify the installation of the most common packages I use for a web server.
+------------------------------------------------------------------------------------------------------
 
-I'm not a programming expert, it's just a hobby. Surely there are better ways to do this.
+### I'm not a programming expert, it's just a hobby. Surely there are better ways to do this.
 
 This will install:
  Ngnix web server with rtmp
